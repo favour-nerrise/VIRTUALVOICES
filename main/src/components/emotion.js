@@ -27,58 +27,47 @@ export default class Emotion extends Component {
         color: "#FDB45C",
         highlight: "#FFC870",
         label: keys[2]
-      },
-      {
-        value: values[3],
-        color: "#949FB1",
-        highlight: "#A8B3C5",
-        label: keys[3]
-      },
-      {
-        value: values[4],
-        color: "#4D5360",
-        highlight: "#616774",
-        label: keys[4]
       }
+      
     ];
 
     const options = {
       //Boolean - Show a backdrop to the scale label
       scaleShowLabelBackdrop : true,
-    
+
       //String - The colour of the label backdrop
       scaleBackdropColor : "rgba(255,255,255,0.75)",
-    
+
       // Boolean - Whether the scale should begin at zero
       scaleBeginAtZero : true,
-    
+
       //Number - The backdrop padding above & below the label in pixels
       scaleBackdropPaddingY : 2,
-    
+
       //Number - The backdrop padding to the side of the label in pixels
       scaleBackdropPaddingX : 2,
-    
+
       //Boolean - Show line for each value in the scale
       scaleShowLine : true,
-    
+
       //Boolean - Stroke a line around each segment in the chart
       segmentShowStroke : true,
-    
+
       //String - The colour of the stroke on each segment.
       segmentStrokeColor : "#fff",
-    
+
       //Number - The width of the stroke value in pixels
       segmentStrokeWidth : 2,
-    
+
       //Number - Amount of animation steps
       animationSteps : 200,
-    
+
       //String - Animation easing effect.
       animationEasing : "easeOutElastic",
-    
+
       //Boolean - Whether to animate the rotation of the chart
       animateRotate : true,
-    
+
       //Boolean - Whether to animate scaling the chart from the centre
       animateScale : true,
       // {% raw %}
@@ -97,7 +86,7 @@ export default class Emotion extends Component {
       </ul>"`
       // {% endraw %}
     };
-    
+
     const colors = ["red","grey","yellow","purple","green"]
 
     return (
