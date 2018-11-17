@@ -1,14 +1,14 @@
-# EchoJournal: Journal for Caretakers of Austistic Patients
-## #HackNYU2018
+# V^2: A Virtual Voice for Autistic Students
+## #NSBER2FRC2018HACKATHON
 ### Accessibility & Assistive Technology
 
 
 ## How to run app?
-Tested react app working with 
+Tested react app working with
 
 ```sh
-$ git clone https://github.com/myy233/HackNYU2018.git
-$ cd mana
+$ git clone git@github.com:favour-nerrise/VIRTUALVOICES.git
+$ cd main
 $ npm install
 $ npm start
 ```
@@ -25,36 +25,4 @@ Tested working with Python2 and pip 9.0.1
 * Python2 or Python3
 * Pip
 * SciPy
-* Vokatori SDK https://developers.vokaturi.com/downloads/sdk
-
-### How to run the Tone Analysis
-You need Vokaturi to get this to work.
-
-```sh
-$ git clone https://github.com/myy233/HackNYU2018.git
-$ sudo pip install scipy
-$ cd api
-$ python tone-analyzer.py hello.wav mac
-```
-
-#### Mac
-
-```sh
-$ python tone-analyzer.py hello.wav mac
-```
-
-#### Linux
-
-```sh
-$ python tone-analyzer.py hello.wav linux
-```
-
-#### Windows
-
-```sh
-$ python tone-analyzer.py hello.wav windows
-```
-
-## How Do I Use A Different Audio File?
-
-* Just record some audio and save it as a `.wav` file in the `api` folder
+* Google Cloud NLP
