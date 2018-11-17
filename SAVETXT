@@ -1,0 +1,47 @@
+const document = {
+  content: entry,
+  type: 'PLAIN_TEXT'
+};
+
+const Positive = 0;
+const Neutral = 0;
+const Negative = 0;
+
+client.analyzeSentiment({
+    document: document
+  })
+  .then(results => {
+    const sentiment = results[0].documentSentiment;
+
+    if (sentiment.score > 0.2) {
+      Positive = 1 * parseFloat(sentiment.score).toFixed(3);
+    } else if (sentiment.score < 0.2 && sentiment.score > -0.2) {
+      Neutral = 1 * parseFloat(sentiment.score).toFixed(3);
+    } else {
+      Negative = 1 * parseFloat(sentiment.score).toFixed(3);
+    }
+
+    // console.log(`Text: ${text}`);
+    // console.log(`Sentiment score: ${sentiment.score}`);
+    // console.log(`Sentiment magnitude: ${sentiment.magnitude}`);
+  })
+  .catch(err => {
+    console.error('ERROR:', err);
+  });
+
+// const Neutral = parseFloat((1 * Math.random()).toFixed(3));
+// const Happy = parseFloat(((1 - Neutral) * Math.random()).toFixed(3));
+// const Sad = parseFloat(((1 - Happy - Neutral) *  Math.random()).toFixed(3));
+const Angry = parseFloat(((1 - Sad - Happy - Neutral) * Math.random()).toFixed(3));
+const Fear = parseFloat((1 - Angry - Sad - Happy - Neutral).toFixed(3));
+
+entry.emotion = {
+  Neutral,
+  Positive,
+  Negative,
+  Angry,
+  Fear
+};
+this.setState((prevState) => ({
+  entries: [...prevState.entries, entry]
+}));

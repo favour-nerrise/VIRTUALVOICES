@@ -1,0 +1,113 @@
+*,*::after,*::before,html,body {
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+  background: #eeeeee;
+  font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li{
+  list-style: none;
+}
+.App{
+  margin: auto;
+  width: 100%;
+  max-width: 960px;
+  min-height: 100vh;
+  background: #fff;
+  padding: 2rem;
+}
+.entry-list{
+  margin: 2rem 0;
+}
+.entry-list-item{
+  margin: 0 0.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.entry-list-item-date{
+  text-align: right;
+}
+.View-Entry p{
+  margin: 1rem 0;
+}
+.btn{
+  text-transform: none;
+}
+.Home > .btn{
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  padding: 0;
+  line-height: 4rem;
+  font-size: 3rem;
+  float: right;
+}
+textarea{
+  min-height: 20rem;
+}
+.btn-submit{
+  float: right;
+}
+
+h2{
+  text-align: left;
+  font-size: 1.8rem;
+
+}
+.View-Entry h2{
+  margin-top: 2rem; 
+}
+.View-Entry h3{
+  text-align: left;  
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+.chart{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.chart-legend{
+  float: left;
+}
+.chart-legend-key{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.chart-legend-key-circle{
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+.red{
+  background: #FF5A5E;
+}
+.green{
+  background: #46BFBD;
+}
+.yellow{
+  background: #FDB45C;
+}
+.949FB1{
+  background: #949FB1;
+}
+.4D5360{
+  background: #4D5360;
+}

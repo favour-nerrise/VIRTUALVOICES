@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <link href="DraftStyle.css" rel="stylesheet" type="text/css">
+    <title>formDemo\.html</title>
+    <meta charset = "UTF-8" />
+  </head>
+
+
+
+  <body>
+    <h1>EchoJournal</h1>
+    <form>
+      <fieldset>
+        <legend>Phrase</legend>
+        <!-- <p> -->
+          <label>Phrase</label>
+          <input type = "text" size="70"
+                 id = "myInput"
+                 rows = "3"
+                 cols = "90"
+                 placeholder = "Write phrase here" />
+                 <span onclick="newElement()" class="addBtn">Add</span>
+        <!-- </p> -->
+
+<script>
+// Create a new list item when clicking on the "Add" button
+
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+
+</script>
+
+
+<!-- Note:THE FOLLOWING SCRIPT IS A HUGE COPY/PASTE FROM THE TUTORIAL -->
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+
+        <!-- <p>
+          <textarea id = "myTextArea"
+                  rows = "3"
+                  cols = "90">Write exact phrase here</textarea>
+        </p> -->
+
+      </fieldset>
+
+<fieldset>
+<legend>Journal</legend>
+<p>
+<label>Journal</label>
+ <input type = "text"
+                 id = "myText"
+                 placeholder = "text here" />
+
+<p>
+<input type="date" name="bday" max="1979-12-31"><br>
+<p>
+</p>
+Suggestions for journal:
+<ul>
+<li>Location: Environment, Sounds, Sight, Smell, Taste, Touch.</li>
+<li>Occasion: Date, Time, Event, Season</li>
+<li>Behavior: Physical</li>
+</ul>
+<p>
+</p>
+
+</fieldset>
+
+<button type="button">Submit</button>
+    </form>
+
+  </body>
+
+<ul id="myUL">
+  <li>Stop singing</li>
+  <li>I don't want it</li>
+  <li>Example phrase</li>
+</ul>
+
+
+</html>

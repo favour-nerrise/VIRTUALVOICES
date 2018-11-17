@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+
+<html>
+<head>
+{% load static %}
+
+<title>Home Page</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+<!-- font awesome -->
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="(% static 'css/home_style.css' %}">
+<script type="text/javascript" src="{% static 'js/home_script.js' %}"></script>
+</head>
+
+<body>
+  <!--centered navbar -->
+  <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Just PicIt!</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <!--<ul id = "nav-mobile" class="right hide-on-med-and-down">-->
+        <!--  <li><a href="category.html">Begin Conversation</a></li>-->
+        <!--</ul>-->
+        <!--<ul id = "nav-mobile" class="right hide-on-med-and-down">-->
+        <!--  <li><a href="Initialhelp.html">Getting Started</a></li>-->
+        <!--</ul>-->
+      </div>
+    </nav>
+
+<!--<div id="index-banner" class="parallax-container">-->
+<!--    <div class="section no-pad-bot">-->
+<!--        <div class="container">-->
+<!--        <br><br>-->
+<!--        <div class="row center">-->
+<!--          <h5 class="header col s12 light" style="font-family: 'Julius Sans One', sans-serif;">A platform designed to help you communicate with your special-needs sibling.</h5>-->
+<!--        </div>-->
+<!--        <div class="row center" style="font-family: 'Zilla Slab', serif; font-weight: bold;">-->
+<!--        </div>-->
+<!--        <br><br>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center red-text text-lighten-2" style="font-family: 'Monoton', cursive;">Just PicIt</h1>
+        <div class="row center">
+          <h5 class="header col s12 light" style="font-family: 'Julius Sans One', sans-serif;">A website designed to help you connect with your special-needs sibling</h5>
+        </div>
+        <div class="row center" style="font-family: 'Zilla Slab', serif; font-weight: bold;">
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="image/balloon.jpg" alt="My image"></div>
+  </div>
+
+
+
+  <div class="section white">
+   <div class="row container">
+        <div class="row">
+
+           <div class="col s12 m4">
+             <div class="icon-block">
+               <h2 class="center black-text"><i class="material-icons">settings</i></h2>
+               <h5 class="center">HOW IT WORKS</h5>
+             <p> - You and your sibling choose from various activity categories
+             <br>- Select activities based on interest/level of difficulty
+             <br>- Selected activity choices produce readable/speakable sentence</p><!-- Promo Content 1 goes here -->
+            </div>
+           </div>
+           <div class="col s12 m4">
+             <div class="icon block">
+             <h2 class="center black-text"><i class="material-icons">lightbulb_outline</i></h2>
+             <h5 class="center">WHY IT WORKS</h5>
+             <p>- Tutorials to guide you in interacting with your sibling
+             <br>- Wide array of categories which can be easily understood by a special-needs individual
+             <br>- Reading of sentence builds speaking skills/confidence
+           </p>
+             </div>
+           </div>
+           <div class="col s12 m4">
+             <div class="icon block">
+             <h2 class="center black-text"><i class="material-icons">flash_on</i></h2>
+             <h5 class="center">OUR PURPOSE</h5>
+             <p> Our goal is to enable you to enhance your relationship with your special-needs sibling, while creating a community you can both feel a part of. <br><br>Having a sibling with autism doesn't mean that you can't have fun together. You'll just need to find a different way to interact, and we're here to help you along the way!
+           </p>
+             </div>
+           </div>
+<!--          <div class="col s12 m4">-->
+<!--            <div><p><br><br><br></p></div>-->
+<!--            <button class="center waves-effect waves-light btn" id = "letsgo" style = " color:white;-->
+<!--padding: 15px 32px; text-align: center; text-decoration: none; border-radius: 12px;-->
+<!--display: inline-block; height: 100px; width: 350px;" onclick="catgory.html">Start New Conversation</button></div>-->
+<!--          </div>-->
+
+
+
+         </div>
+       </div>
+     </div>
+
+
+        <!-- please disregard the dummy text, but we need a 100 words describing our goal -->
+    <!--  <p class="grey-text text-darken-4 lighten-3">-->
+    <!--   It's a question that seems to need no answer.-->
+    <!--   After all, once your sibling starts talking, you'd just treat them like any of your other friends, right?-->
+    <!--   But what if you have a sibling with special needs. What if they can't speak yet, or feel uncomfortable with eye contact.-->
+    <!--   What if you've tried to play with them, but they seem to only be interested in their legos, trainset, or lying on the bed.-->
+    <!--   Maybe your sibling isn't at all like your friends. But that doesn't mean you can't have as much fun together! You just have to find a different way to interact.-->
+
+    <!--</p>-->
+    <!--<p class="grey-text text-darken-4 lighten-3">But where do you begin?</p>-->
+    <!--<p class="grey-text text-darken-4 lighten-3">-->
+    <!--  That's what we're here for! Just PicIt doesn't just reccomend the perfect activities for you and your sibling to play together: we teach you how to play with them.-->
+    <!--</p>-->
+    <!--<p class="grey-text text-darken-4 lighten-3">-->
+    <!--  Click "Start Conversation" now!-->
+    <!--</p>-->
+
+
+     <!-- please disregard the dummy text, but we need a 100 words describing our goal -->
+    <!-- <p class="grey-text text-darken-4 lighten-3">-->
+    <!--   Erin Bouton is a student at Middletown High School South in Middletown, NJ.-->
+    <!--   She is an athlete and is on her school's field hockey, swimming, and golf teams.-->
+    <!--   The summer before her senior year, she participated in Girls Who Code where she found a passion-->
+    <!--   for computer science. She is planning to study computer science and international business in college.-->
+    <!--</p>-->
+
+    <!-- should be 100 words in 2 paragraphs -->
+    <!-- <p class="grey-text text-darken-4 lighten-3">-->
+    <!--  Bing Li is a student at Stuyvesant High School, Manhattan. She is very interested in computer science-->
+    <!--  and has taken an intro class about it in sophomore year. She is also an active member of the Girls Who Code club in her school.-->
+    <!--  In addition to programming, Bing enjoys reading, swimming and making origami during her free time.-->
+    <!--  </p>-->
+
+    <!--  <p class="grey-text text-darken-4 lighten-3">-->
+    <!--    Sunjana Kulkarni is a student at John P. Stevens High School in Edison, NJ,-->
+    <!--    as well as a participant in the Girls Who Code 2017 summer immersion program.-->
+    <!--    She originally gained inspiration for Just PicIt from her experiences growing up-->
+    <!--    with her brother, who has autism. Wanting to help other siblings of special-needs children-->
+    <!--    bond with their brothers and sisters, she teamed up with Bing and Erin to create the site.-->
+    <!--    In her free time, Sunjana likes to play the viola, and she plans to study computer science in college.-->
+    <!-- </p>-->
+
+
+
+      <a href = "category.html"> <h5 class="center">Start New Conversation</h5> </a>
+
+      <br>
+      <!-- actually the link doesn't work, only the instagram one works-->
+    <!--  <a href = "https://twitter.com/?lang=en">-->
+    <!--    <button class="waves-effect waves-light btn"><i class="fa fa-twitter" aria-hidden="true"> Twitter</i></button>-->
+    <!--  </a>-->
+    <!--  <a href = "https://www.facebook.com/login.php">-->
+    <!--  <button class="waves-effect waves-light btn"><i class="fa fa-facebook-official" aria-hidden="true">acebook</i></button>-->
+    <!--</a>-->
+
+    <!--<a href = "https://www.instagram.com/accounts/login/"-->
+    <!--  <button class="waves-effect waves-light btn"><i class="fa fa-instagram" aria-hidden="true">  Instagram</i></button>-->
+    <!--</a>-->
+   </div>
+ </div>
+ <div class="parallax-container">
+   <div class="parallax"><img src="{% static "image/kids-250844_1920.jpg" %}" alt="My image"/></div>
+ </div>
+
+</body>
+ </html>
